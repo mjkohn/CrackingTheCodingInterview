@@ -4,18 +4,23 @@
 
 from Chapter2 import LinkedList as ll
 
+
 def removedupes(LL):
+    # Set previous and current
     previous = LL.head
     current = previous.next
-
+    # Set to store data seen
     keys = {previous.data}
-
+    # go through linked list
     while current:
         if current.data in keys:
+            # Data found in set, remove node
             previous.next = current.next
             current = current.next
         else:
+            # Data not found in set, add data to set
             keys.add(current.data)
+            # Increment pointers
             previous = current
             current = current.next
 
