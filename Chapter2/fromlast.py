@@ -1,6 +1,6 @@
 # Cracking The Coding Interview
 # File that will generate linked lists and other support functions
-# 2.1 find kth from end element
+# 2.2 find kth from end element
 
 from Chapter2 import LinkedList as ll
 
