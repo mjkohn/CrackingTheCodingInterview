@@ -42,5 +42,5 @@ if __name__ == '__main__':
     LL.insert(5)
     LL.insert(6)
     LL.printLL()
-    count = LL.getLength()
+    length = LL.getLength()
     print(str(count))
