@@ -26,6 +26,14 @@ class LinkedList(object):
             print(str(current.data))
             current = current.next
 
+    def getLength(self):
+        count = 0
+        current = self.head
+        while current:
+            count += 1
+            current = current.next
+        return count
+
 
 if __name__ == '__main__':
     LL = LinkedList()
@@ -34,3 +42,5 @@ if __name__ == '__main__':
     LL.insert(5)
     LL.insert(6)
     LL.printLL()
+    count = LL.getLength()
+    print(str(count))
